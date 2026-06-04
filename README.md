@@ -8,7 +8,7 @@ A simple web app to search for movies and see what is trending right now.
 
 ## 🏷️ Built With
 
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Appwrite](https://img.shields.io/badge/Appwrite-FD366E?style=for-the-badge&logo=appwrite&logoColor=white)
@@ -19,7 +19,7 @@ A simple web app to search for movies and see what is trending right now.
 
 ## ✨ Features
 
-- 🔎 **Live Search** — Results appear as you type.
+- 🔎 **Live Search** — Results appear as user type.
 - ↕️ **Sorting** — Browse movies by popularity, rating, or release date.
 - 🔥 **Trending** — See the most-searched movies from all users.
 - 🎴 **Movie Cards** — View each movie's poster, rating, language, and year.
@@ -45,7 +45,7 @@ I built this app with React and styled it using Tailwind CSS. Movie information 
 
 Along the way I learned to:
 
-- Delay search requests so the app only loads results after the user stops typing.
+- Delay search requests by debouncing the input so the app only loads results after the user stops typing.
 - Connect a website to a live movie database and a cloud database.
 - Handle loading and error messages so the app always feels smooth.
 - Design a layout that looks good on any screen size.
@@ -57,4 +57,3 @@ Along the way I learned to:
 - 🎬 A detail page for each movie (cast, trailer, and summary).
 - 📜 Load more results with pagination or infinite scroll.
 - ⭐ A favourites list to save movies.
-- ⌨️ Keyboard shortcuts for faster searching.
