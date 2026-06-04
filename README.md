@@ -2,8 +2,6 @@
 
 A simple web app to search for movies and see what is trending right now.
 
-> 🔗 **Live Demo:** [Add your deployed URL here](https://your-live-url.example.com) · 📺 [Watch the demo](#-demo)
-
 ---
 
 ## 🏷️ Built With
