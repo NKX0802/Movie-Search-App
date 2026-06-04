@@ -2,7 +2,7 @@
 
 A simple web app to search for movies and see what is trending right now.
 
-🔗 **Live App:** https://movie-search-app-weld-phi.vercel.app/
+> 🔗 **Live Demo:** [Add your deployed URL here](https://your-live-url.example.com) · 📺 [Watch the demo](#-demo)
 
 ---
 
@@ -30,12 +30,12 @@ A simple web app to search for movies and see what is trending right now.
 
 ## 🖱️ How to Use
 
-| Action | What to do |
-| --- | --- |
-| Search a movie | Type in the search bar |
-| Clear the search | Click the ✖ button |
-| Change the order | Use the sort dropdown |
-| Return to top | Click the "Back to Top" button |
+| Action           | What to do                     |
+| ---------------- | ------------------------------ |
+| Search a movie   | Type in the search bar         |
+| Clear the search | Click the ✖ button             |
+| Change the order | Use the sort dropdown          |
+| Return to top    | Click the "Back to Top" button |
 
 ---
 
@@ -44,6 +44,7 @@ A simple web app to search for movies and see what is trending right now.
 I built this app with React and styled it using Tailwind CSS. Movie information comes from the TMDB movie service, and a cloud database (Appwrite) counts every search to show which movies are trending.
 
 Along the way I learned to:
+
 - Delay search requests so the app only loads results after the user stops typing.
 - Connect a website to a live movie database and a cloud database.
 - Handle loading and error messages so the app always feels smooth.
