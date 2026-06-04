@@ -2,7 +2,7 @@
 
 A fast, clean, and interactive movie discovery app. Search The Movie Database (TMDB) live as you type, sort the catalogue by popularity, rating, or release date, and see what everyone else is searching for through a real-time **Trending Movies** board powered by Appwrite.
 
-> 🔗 **Live Demo:** [Add your deployed URL here](https://your-live-url.example.com) · 📺 [Watch the demo](#-demo)
+> 🔗 **Live Demo:** movie-search-app-weld-phi.vercel.app
 
 ---
 
