@@ -111,24 +111,25 @@ const App = () => {
           <h1>
             Find <span className="text-gradient">Movies</span> You Like
           </h1>
-          <div className="flex flex-col sm:flex-row justify-center sm:justify-center gap-5 mt-10 w-fit mx-auto">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-5 mt-10 w-full max-w-3xl mx-auto">
             {/* Update the data, clear set the searchTerm to empty string (Props can let the system know =)*/}
             <SearchBar
               currentWord={searchTerm}
               updateWord={setSearchTerm}
               clear={() => setSearchTerm("")}
             />
+
             {/* Change the sortBy */}
             {!searchTerm && (
               <div
-                className="rounded-3xl w-fit text-2xl mt-1 p-[3px] transition-all duration-300 hover:scale-105"
+                className="rounded-3xl will-change-transform w-fit text-sm sm:text-2xl mt-1 p-[3px] transition-all duration-300 hover:scale-105"
                 style={{
                   background: "linear-gradient(to right, #BAE6FD, #7DD3FC)",
                 }}
               >
                 <select
                   onChange={(e) => setSortBy(e.target.value)}
-                  className="text-2xl bg-transparent text-black p-3 rounded-3xl outline-none cursor-pointer h-full"
+                  className="text-sm sm:text-2xl bg-transparent text-black p-2 sm:p-3 rounded-3xl outline-none cursor-pointer h-full"
                 >
                   <option value="popularity.desc">Popularity</option>
                   <option value="vote_average.desc">Rating</option>
@@ -178,19 +179,20 @@ const App = () => {
           )}
         </section>
       </div>
-      {/* Back to top button goes here, outside wrapper */}
+
+      {/* Back to top button */}
       {showButton && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="fixed bottom-8 right-8 z-50 flex items-center justify-center gap-2 px-5 py-2.5 font-bold rounded-full shadow-lg transition-transform duration-300 hover:scale-110 bg-linear-to-r from-[#BAE6FD] to-[#7DD3FC] text-[#030014]"
+          className="cursor-pointer will-change-transform fixed bottom-5 right-5 sm:bottom-8 sm:right-8 z-50 flex items-center justify-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-5 sm:py-2.5 font-bold rounded-full shadow-lg transition-transform duration-300 hover:scale-110 active:scale-90 bg-linear-to-r from-[#BAE6FD] to-[#7DD3FC] text-primary"
         >
           <img
             src="arrow-top.png"
             alt="up arrow"
-            className="size-10 sm:size-8 object-contain"
+            className="size-5 sm:size-8 object-contain"
           />
 
-          <span className="text-2xl sm:text-xl">Back to top</span>
+          <span className="hidden sm:inline text-xl">Back to top</span>
         </button>
       )}
     </main>

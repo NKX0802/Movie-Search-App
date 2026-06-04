@@ -3,7 +3,7 @@ const MovieCard = ({
 }) => {
   // const stars = vote_average ? Math.round(vote_average / 2) : 0;
   return (
-    <div className="movie-card">
+    <div className="movie-card will-change-transform">
       <img
         src={
           poster_path
